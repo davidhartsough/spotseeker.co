@@ -4,72 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
-  <title>__TITLE__</title>
-  <meta name="description" content="__DESCRIPTION__">
-  <meta name="keywords" content="__KEYWORDS__">
-  <meta name="author" content="__AUTHOR__">
-  <link rel="canonical" href="http://example.com">
-
-  <meta property="og:title" content="__TITLE__">
+  <title>Spot Seeker</title>
+  <meta name="description" content="Spot Seeker is a social cartography app where Spot Seekers help each other explore the most beautiful places nearby.">
+  <meta name="keywords" content="spot,seeker,beautiful,places,social,cartography,cartographer,nearby,location,app,geolocation">
+  <meta name="author" content="David Hartsough">
+  <link rel="canonical" href="https://spotseeker.co">
+  <meta property="og:title" content="Spot Seeker">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://example.com">
-  <meta property="og:image" content="http://example.com/logo.png">
+  <meta property="og:url" content="https://spotseeker.co">
+  <meta property="og:image" content="https://spotseeker.co/logo.png">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="__ALT__">
+  <meta property="og:image:alt" content="Spot Seeker logo">
   <meta property="og:locale" content="en_US">
-  <meta property="og:description" content="__DESCRIPTION__">
-  <meta property="og:site_name" content="__TITLE__">
-
+  <meta property="og:description" content="Spot Seeker is a social cartography app where Spot Seekers help each other explore the most beautiful places nearby.">
+  <meta property="og:site_name" content="Spot Seeker">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@__TWITTER_SITE__">
-  <meta name="twitter:creator" content="@__TWITTER_CREATOR__">
-
+  <meta name="twitter:site" content="@Spot_Seeker">
+  <meta name="twitter:creator" content="@David_Hartsough">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
       "@type": "WebSite",
-      "name": "__TITLE__",
-      "url": "http://example.com",
-      "sameAs": [
-        "http://www.facebook.com/yourprofile",
-        "http://www.linkedin.com/in/yourprofile",
-        "http://plus.google.com/yourprofile"
-      ],
-      "headline": "__TITLE__",
-      "keywords": "__KEYWORDS__",
-      "description": "__DESCRIPTION__",
-      "image": "http://example.com/logo.png",
+      "name": "Spot Seeker",
+      "url": "https://spotseeker.co",
+      "headline": "Spot Seeker",
+      "keywords": "spot,seeker,beautiful,places,social,cartography,cartographer,nearby,location,app,geolocation",
+      "description": "Spot Seeker is a social cartography app where Spot Seekers help each other explore the most beautiful places nearby.",
+      "image": "https://spotseeker.co/logo.png",
       "author": {
         "@type": "Person",
-        "name": "__AUTHOR__"
+        "name": "David Hartsough"
       }
     }
   </script>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="author" href="/humans.txt">
-
+  <link rel="manifest" href="./manifest.json">
+  <link rel="author" href="./humans.txt">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="__TITLE__">
-  <meta name="theme-color" content="#000000">
+  <meta name="application-name" content="Spot Seeker">
+  <meta name="theme-color" content="#E91E63">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="__TITLE__">
+  <meta name="apple-mobile-web-app-title" content="Spot Seeker">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="msapplication-TileColor" content="#000000">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-
-  <link rel="stylesheet" href="/main.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <meta name="msapplication-TileImage" content="./mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <header><nav></nav></header>
-  <main><section><h1>__TITLE__</h1></section></main>
-  <footer></footer>
+  <div class="show" id="landing"><div id="hero"><img src="./spotseeker.png" alt="Spot Seeker: Explore beautiful places."></div><p id="join-in">Join the social cartography.<br>Become a Spot Seeker.</p><div class="hide" id="sign-in-options"><p id="sign-in-text">Sign in</p><div id="sign-in"><button class="sign-in-btn" id="google" onclick="googleSignIn()">Google</button> <button class="sign-in-btn" id="facebook" onclick="facebookSignIn()">Facebook</button> <button class="sign-in-btn" id="twitter" onclick="twitterSignIn()">Twitter</button></div></div><div class="hide" id="loading"><div id="progress"><div id="indeterminate"></div></div></div><div id="features"><div class="feature"><div class="feature-icon"><i class="material-icons">explore</i></div><p class="feature-line">Explore beautiful places.</p></div><div class="feature"><div class="feature-icon"><i class="material-icons">add_location</i></div><p class="feature-line">Mark your favorite Spots.</p></div><div class="feature"><div class="feature-icon"><i class="material-icons">thumbs_up_down</i></div><p class="feature-line">Rate Spots you visit.</p></div></div></div>
+  <div class="hide" id="app"><header><h1>Spot Seeker</h1><div id="toolbar-actions"><button id="account-modal-trigger"><i id="account-icon" class="material-icons">account_circle</i></button> <button class="hide" id="center-map" onclick="centerMap()"><i class="material-icons">my_location</i></button></div></header><div id="account-modal" class="hidden"><div class="modal-content"><div class="modal-top"><p id="display-name"></p></div><div class="modal-bottom"><button onclick="signOut()" id="sign-out">Sign out</button></div></div></div><div class="show" id="update"><div id="progress"><div id="indeterminate"></div></div><div id="message">Getting your location...</div></div><div id="map"></div><div class="hide" id="mini-fabs"><button class="mini-fab" id="like" onclick="like()"><i class="material-icons">thumb_up</i></button> <button class="mini-fab" id="dislike" onclick="dislike()"><i class="material-icons">thumb_down</i></button></div><div id="fab" class="hide"><button class="hide" id="fab-btn" onclick="handleFab()"><i id="fab-icon" class="material-icons"></i></button></div><div id="overlay" class="hide"></div><div class="hide" id="mark-modal"><div class="modal"><p>Mark this spot?</p><div class="modal-options"><button class="modal-option" id="cancel-mark" onclick="cancelMark()">Cancel</button> <button class="modal-option" id="mark-spot" onclick="markSpot()">Mark</button></div></div></div><div class="hide" id="delete-modal"><div class="modal"><p>Delete your spot?</p><div class="modal-options"><button class="modal-option" id="cancel-delete" onclick="cancelDelete()">Cancel</button> <button class="modal-option" id="delete-spot" onclick="deleteSpot()">Delete</button></div></div></div></div>
+  <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script><script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script><script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script><script type="text/javascript" src="./main.js"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHj165zQdfWTXFO63FMfonllqhCBjV7Yw" async defer="defer"></script>
 </body>
 </html>

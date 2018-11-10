@@ -1,8 +1,8 @@
 # humanstxt.org/
 
 /* TEAM */
-__ROLE__: __AUTHOR__
-Site: http://example.com
+Developer + Designer: David Hartsough
+Site: https://davidhartsough.com
 
 /* THANKS */
-__AUTHOR__
+David

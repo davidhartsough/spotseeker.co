@@ -1,6 +1,6 @@
 {
-  "name": "__NAME__",
-  "short_name": "__SHORTNAME__",
+  "name": "Spot Seeker",
+  "short_name": "Spot Seeker",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "theme_color": "#E91E63",
+  "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone"
 }
